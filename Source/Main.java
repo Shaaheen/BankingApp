@@ -5,27 +5,33 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class Main {
+    //Database details
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://localhost:3306/newschemadatabase";
     static final String USER = "shaaheen";
     static final String PASS = "gigabyte";
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
+        //Connecting to JDBC Driver
         try {
             Class.forName(JDBC_DRIVER);
-            System.out.println("Connected to JDBC Driver");
         } catch (ClassNotFoundException e) {
             System.out.println("Where is your MySQL JDBC Driver?");
             e.printStackTrace();
             return;
         }
-        System.out.println("Trying to Connect to Database");
-        Connection conn = DriverManager.getConnection(DB_URL,USER,PASS);
+        Connection conn = DriverManager.getConnection(DB_URL,USER,PASS); //Establishing connection with server
         System.out.println("Connected");
-        System.out.println("Creating Statement");
-        Statement stmt = conn.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_UPDATABLE);
+        Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE); //creates statements that are updatable
         Scanner user_input = new Scanner(System.in);
-        System.out.println("Welcome to the Banking Application");
+        System.out.println("Welcome to the Banking Application"); //UI
+        System.out.println("Select type of user");
+        System.out.println("1)User 2)Management"); //gets type of user so can determine what user can do
+        int typeOfUser = user_input.nextInt();
+        if (typeOfUser == 1){
+            userUI(stmt);
+        }
+        /*
         System.out.println("Choose an option below");
         System.out.println("Find Update Create");
 
@@ -64,8 +70,40 @@ public class Main {
 
             System.out.println("New Option: ");
             inputed = user_input.nextLine();
-        }
+        }*/
 
+    }
+    private static void userUI(Statement stmt){
+        Scanner user_input = new Scanner(System.in);
+        System.out.println("1)Login 2)Create New Account");
+        int userChoice = user_input.nextInt();
+        if (userChoice == 1){
+            System.out.println("Username:");
+            user_input.nextLine();
+            String Username = user_input.nextLine();
+            System.out.println("Password:");
+            String Password = user_input.nextLine();
+            ResultSet rs = null;
+            try{
+                Username = "\"" + Username + "\"";
+                rs = stmt.executeQuery("SELECT Password from logindetails WHERE Username=" + Username);
+                String passFound = "not found";
+                while (rs.next()){
+                    passFound = rs.getString(1);
+                }
+                if (Password.equals(passFound)){
+                    System.out.println("Login successful");
+                    
+                }
+                else{
+                    System.out.println("Password or Username not correct");
+                }
+            } catch (SQLException e){
+                System.out.println("Username not found");
+            }
+
+
+        }
     }
 
 }
