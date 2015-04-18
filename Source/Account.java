@@ -10,11 +10,11 @@ public class Account {
     private String bank;
     private int pin;
 
-    public Account(int ID, String name, double balance, String bank,int pin) {
+    public Account(int ID, String name, double balance, int bankID,int pin) {
         this.ID = ID;
         this.name = name;
         this.balance = balance;
-        this.bank = bank;
+        this.bank = Utilities.getBank(bankID);
         this.pin = pin;
     }
 
@@ -35,7 +35,7 @@ public class Account {
     }
 
     public String toString(){
-        return "Name: " + name + "\r\nBalance: " + balance + "\r\nBank: " + bank + "\r\nAccount Number: "+ ID;
+        return "Name: " + name + "\r\nBalance: " + balance + "\r\nBank: " + bank + "\r\nAccount Number: "+ ID + "\r\n";
     }
 
 }

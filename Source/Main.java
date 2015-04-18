@@ -2,6 +2,7 @@ package Source; /**
  * Created by Shaaheen on 4/9/2015.
  */
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -25,12 +26,7 @@ public class Main {
         System.out.println("Connected");
         Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE); //creates statements that are updatable
         System.out.println("Welcome to the Banking Application"); //UI
-        System.out.println("Select type of user");
-        System.out.println("1)User 2)Management"); //gets type of user so can determine what user can do
-        int typeOfUser = user_input.nextInt();
-        if (typeOfUser == 1){
-            userUI(stmt);
-        }
+        startUI(stmt);
         /*
         System.out.println("Choose an option below");
         System.out.println("Find Update Create");
@@ -73,9 +69,87 @@ public class Main {
         }*/
 
     }
-    private static void userUI(Statement stmt) throws SQLException {
+    private static void startUI(Statement stmt) throws SQLException {
+        System.out.println("Select type of user");
+        System.out.println("1)User 2)Management 3)Exit"); //gets type of user so can determine what user can do
+        int typeOfUser = user_input.nextInt();
+        if (typeOfUser == 1){
+            userUI(stmt);
+        }
+        else if (typeOfUser == 2){
+            TotalAccounts totAcc = createTotalAccounts(stmt);
+            managementUI(stmt,totAcc);
+        }
+        else if (typeOfUser == 3){
+            System.out.println("End of Session");
+            return;
+        }
+    }
 
-        System.out.println("1)Login 2)Create New Account");
+    private static TotalAccounts createTotalAccounts(Statement stmt) throws SQLException {
+        ResultSet rs = stmt.executeQuery("SELECT * FROM accounts");
+        ArrayList<Account> allAccounts = new ArrayList<Account>();
+        while (rs.next()){
+            int ID = Integer.parseInt(rs.getString(1));
+            String name = rs.getString(2);
+            double bal = Double.parseDouble(rs.getString(3));
+            int bnk = Integer.parseInt(rs.getString(4));
+            int pin = Integer.parseInt(rs.getString(5));
+            Account currentUser = new Account(ID,name,bal,bnk,pin);
+            allAccounts.add(currentUser);
+        }
+        TotalAccounts allTheAccounts = new TotalAccounts(allAccounts);
+        return allTheAccounts;
+    }
+
+    private static void managementUI(Statement stmt,TotalAccounts allTheAccounts) throws SQLException {
+        System.out.println("The managing of all accounts");
+        System.out.println("1)Create New Account 2)Delete account 3)List all accounts 4)Total balance 5)Wealthiest Account 6)Back");
+        int manageChoice = user_input.nextInt();
+        if (manageChoice == 1){
+            int currID = Utilities.getCurrID(stmt) + 1;
+            System.out.println("Name of account user :");
+            user_input.nextLine();
+            String name = user_input.nextLine();
+            name = "\"" + name + "\"";
+            System.out.println("Name of Bank :");
+            String bankName = user_input.nextLine();
+            int bankID = Utilities.getBank(bankName);
+            int pin = Utilities.createPin();
+            if (bankID != 0 ) {
+                stmt.executeUpdate("INSERT INTO accounts VALUES(" + currID + "," + name + "," + 0.0 + "," + bankID + "," + pin + ")");
+                managementUI(stmt,allTheAccounts);
+            }
+            else{
+                managementUI(stmt,allTheAccounts);
+            }
+
+
+        }
+        if (manageChoice == 3){
+            System.out.println(allTheAccounts);
+            managementUI(stmt,allTheAccounts);
+        }
+        else if (manageChoice == 4){
+            System.out.println("Total of all Balances : " + allTheAccounts.getTotalBalt());
+            managementUI(stmt, allTheAccounts);
+        }
+        else if (manageChoice == 5){
+            System.out.println(allTheAccounts.getWealthiest());
+            managementUI(stmt,allTheAccounts);
+        }
+        else if (manageChoice == 6){
+            try {
+                startUI(stmt);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+    private static void userUI(Statement stmt) throws SQLException {
+        System.out.println("1)Login 2)Create New Account 3)Back");
         int userChoice = user_input.nextInt();
         if (userChoice == 1){
             System.out.println("Username:");
@@ -95,7 +169,8 @@ public class Main {
 
                 if (Password.equals(passFound)){
                     System.out.println("Login successful");
-                    successfulLogin(ID,stmt);
+                    Account accountUser = createAccount(stmt,ID);
+                    successfulLogin(accountUser,stmt);
                 }
                 else{
                     System.out.println("Password or Username not correct");
@@ -147,16 +222,18 @@ public class Main {
                 userUI(stmt);
             }
         }
+        else if (userChoice == 3){
+            startUI(stmt);
+        }
     }
 
-    private static void successfulLogin(int accountID,Statement stm) throws SQLException {
+    private static Account createAccount(Statement stm,int accountID) throws SQLException {
         ResultSet rs = null;
         try {
             rs = stm.executeQuery("SELECT * FROM accounts where ID=" + accountID);
 
         } catch (SQLException e) {
             e.printStackTrace();
-            return;
         }
         Account currentUser = null;
         while (rs.next()){
@@ -167,10 +244,19 @@ public class Main {
             int pin = Integer.parseInt(rs.getString(5));
             currentUser = new Account(ID,name,bal,bnk,pin);
         }
-        System.out.println("1)Check account details");
+        return currentUser;
+    }
+
+    private static void successfulLogin(Account currentUser,Statement stm) throws SQLException {
+
+        System.out.println("1)Check account details 3)Logout");
         int accountChoice = user_input.nextInt();
         if (accountChoice == 1){
             System.out.println(currentUser);
+            successfulLogin(currentUser,stm);
+        }
+        else if (accountChoice == 3){
+            userUI(stm);
         }
     }
 
