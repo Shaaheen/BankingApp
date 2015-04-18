@@ -18,24 +18,25 @@ public class Account {
         this.pin = pin;
     }
 
-    public int getID() {
+    protected int getID() {
         return ID;
     }
 
-    public String getName() {
+    protected String getName() {
         return name;
     }
 
-    public double getBalance() {
+    protected double getBalance() {
         return balance;
     }
 
-    public String getBank() {
+    protected String getBank() {
         return bank;
     }
 
     public String toString(){
-        return "Name: " + name + "\r\nBalance: " + balance + "\r\nBank: " + bank + "\r\nAccount Number: "+ ID + "\r\n";
+        return "Name: " + name + "\r\nBalance: " + balance + "\r\nBank: " + bank + "\r\nAccount Number: "+ ID  + "\r\n";
     }
+
 
 }

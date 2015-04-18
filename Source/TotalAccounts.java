@@ -13,14 +13,17 @@ public class TotalAccounts {
         this.allAccounts = allAccounts;
     }
 
-    public String toString(){
+    public void printString(){
         String toString = "";
+        System.out.println("ID    Name        Balance      Bank           ");
         for (Account acc : allAccounts){
             //toString = toString + acc.getName() +"     " + acc.getBalance() + "     " + acc.getBank() + "    " + acc.getID();
-            toString = toString + acc;
-            toString = toString + "\r\n";
+            System.out.printf("%-6d",acc.getID());
+            System.out.printf("%-13s", acc.getName());
+            System.out.printf("%-12.2f", acc.getBalance());
+            System.out.printf("%-14s",acc.getBank());
+            System.out.println();
         }
-        return toString;
     }
 
     public double getTotalBalt(){

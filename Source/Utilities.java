@@ -54,7 +54,7 @@ public class Utilities {
         String pin = "";
         while (pin.length() < 4){
             int dig = rnd.nextInt(9);
-            if (dig > 0){
+            if (dig >= 0){
                 pin = pin + dig;
             }
         }

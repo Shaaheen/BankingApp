@@ -27,47 +27,6 @@ public class Main {
         Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE); //creates statements that are updatable
         System.out.println("Welcome to the Banking Application"); //UI
         startUI(stmt);
-        /*
-        System.out.println("Choose an option below");
-        System.out.println("Find Update Create");
-
-        System.out.println("Option: ");
-        String inputed = user_input.nextLine();
-        while (!inputed.equals("exit")){
-            String sql = "Select * from accounts";
-            if (inputed.equals("Find")) {
-                System.out.println("Enter query");
-                sql = user_input.nextLine();
-                ResultSet rs = stmt.executeQuery(sql);
-                System.out.println("ID   " + "Balance");
-                while (rs.next()) {
-                    System.out.println(rs.getString(1) + "     " + rs.getString(2));
-                }
-            }
-            else if (inputed.equals("Update")){
-
-            }
-            else if (inputed.equals("Create")){
-                ResultSet rs = stmt.executeQuery("SELECT ID from accounts");
-                int currentID = 0;
-                while (rs.next()) {
-                    currentID = Integer.parseInt(rs.getString(1));
-                }
-                System.out.println("What is the balance?");
-                double balance = user_input.nextDouble();
-                currentID +=1;
-                sql = "INSERT INTO accounts VALUES(" + currentID + "," + balance + ")";
-                stmt.executeUpdate(sql);
-                System.out.println("Added successfully");
-            }
-            else{
-                System.out.println(inputed + " is not an option");
-            }
-
-            System.out.println("New Option: ");
-            inputed = user_input.nextLine();
-        }*/
-
     }
     private static void startUI(Statement stmt) throws SQLException {
         System.out.println("Select type of user");
@@ -111,23 +70,42 @@ public class Main {
             System.out.println("Name of account user :");
             user_input.nextLine();
             String name = user_input.nextLine();
-            name = "\"" + name + "\"";
+            String adjName = "\"" + name + "\"";
             System.out.println("Name of Bank :");
             String bankName = user_input.nextLine();
             int bankID = Utilities.getBank(bankName);
             int pin = Utilities.createPin();
             if (bankID != 0 ) {
-                stmt.executeUpdate("INSERT INTO accounts VALUES(" + currID + "," + name + "," + 0.0 + "," + bankID + "," + pin + ")");
-                managementUI(stmt,allTheAccounts);
+                stmt.executeUpdate("INSERT INTO accounts VALUES(" + currID + "," + adjName + "," + 0.0 + "," + bankID + "," + pin + ")");
+                System.out.println("Account added ");
+                System.out.println(new Account(currID,name,0.00,bankID,pin));
+                System.out.println("Your new Pin is :" + pin);
+                System.out.println();
             }
-            else{
-                managementUI(stmt,allTheAccounts);
-            }
+            managementUI(stmt,createTotalAccounts(stmt)); //Updates the allTheAccounts var
 
+        }
+        else if (manageChoice == 2){
+            System.out.println("Enter Account number to delete account");
+            int accNo = user_input.nextInt();
+            System.out.println("Enter name to confirm deletion");
+            user_input.nextLine();
+            String deleteName = user_input.nextLine();
+            deleteName = "\"" + deleteName + "\"";
+            try {
+                stmt.executeUpdate("DELETE FROM logindetails WHERE accID=" + accNo);
+                System.out.println("Login removed");
+                stmt.executeUpdate("DELETE FROM accounts WHERE Name=" + deleteName + "AND ID=" + accNo);
+                System.out.println("Account deleted");
+            }
+            catch (Exception e){
+                System.out.println("Account does not exist");
+            }
+            managementUI(stmt,createTotalAccounts(stmt));
 
         }
         else if (manageChoice == 3){
-            System.out.println(allTheAccounts);
+            allTheAccounts.printString();
             managementUI(stmt,allTheAccounts);
         }
         else if (manageChoice == 4){

@@ -29,8 +29,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47577092" vertical-offset="73" max-vertical-offset="1547">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state vertical-scroll-proportion="1.5726873" vertical-offset="0" max-vertical-offset="850">
+              <caret line="239" column="0" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#startUI#0;class#Main#0" expanded="false" />
@@ -39,25 +39,15 @@
                 <element signature="method#userUI#0;class#Main#0" expanded="false" />
                 <element signature="method#createAccount#0;class#Main#0" expanded="false" />
                 <element signature="method#successfulLogin#0;class#Main#0" expanded="false" />
-                <marker date="1429389471862" expanded="true" signature="1492:1514" placeholder="Select * fro..accounts..." />
-                <marker date="1429389471862" expanded="true" signature="2081:2104" placeholder="SELECT ID fr..accounts..." />
-                <marker date="1429389471862" expanded="true" signature="2436:2498" placeholder="INSERT INTO ..." />
-                <marker date="1429389471862" expanded="true" signature="3573:3595" placeholder="SELECT * FRO..accounts..." />
-                <marker date="1429389471862" expanded="true" signature="5082:5110" placeholder="INSERT INTO ..." />
-                <marker date="1429389471862" expanded="true" signature="5082:5125" placeholder="INSERT INTO ..." />
-                <marker date="1429389471862" expanded="true" signature="5082:5138" placeholder="INSERT INTO ..." />
-                <marker date="1429389471862" expanded="true" signature="5082:5150" placeholder="INSERT INTO ..." />
-                <marker date="1429389471862" expanded="true" signature="5082:5165" placeholder="INSERT INTO ..." />
-                <marker date="1429389471862" expanded="true" signature="5082:5177" placeholder="INSERT INTO ..." />
-                <marker date="1429389471862" expanded="true" signature="6607:6662" placeholder="SELECT Passw..logindetails..." />
-                <marker date="1429389471862" expanded="true" signature="7867:7901" placeholder="SELECT ID fr..accounts..." />
-                <marker date="1429389471862" expanded="true" signature="7867:7922" placeholder="SELECT ID fr..accounts..." />
-                <marker date="1429389471862" expanded="true" signature="7867:7929" placeholder="SELECT ID fr..accounts..." />
-                <marker date="1429389471862" expanded="true" signature="7867:7943" placeholder="SELECT ID fr..accounts..." />
-                <marker date="1429389471862" expanded="true" signature="7867:7945" placeholder="SELECT ID fr..accounts..." />
-                <marker date="1429389471862" expanded="true" signature="7867:7946" placeholder="SELECT ID fr..accounts..." />
-                <marker date="1429389471862" expanded="true" signature="8811:8887" placeholder="INSERT INTO ..." />
-                <marker date="1429389471862" expanded="true" signature="9595:9627" placeholder="SELECT * FRO..accounts..." />
+                <marker date="1429396020079" expanded="true" signature="1974:1996" placeholder="SELECT * FRO..accounts..." />
+                <marker date="1429396020079" expanded="true" signature="3493:3591" placeholder="INSERT INTO ..." />
+                <marker date="1429396020079" expanded="true" signature="4362:4399" placeholder="DELETE FROM ..." />
+                <marker date="1429396020079" expanded="true" signature="4500:4557" placeholder="DELETE FROM ..." />
+                <marker date="1429396020079" expanded="true" signature="4605:4623" placeholder="DELETE FROM ..." />
+                <marker date="1429396020079" expanded="true" signature="6076:6131" placeholder="SELECT Passw..logindetails..." />
+                <marker date="1429396020079" expanded="true" signature="7336:7412" placeholder="SELECT ID fr..accounts..." />
+                <marker date="1429396020079" expanded="true" signature="8280:8356" placeholder="INSERT INTO ..." />
+                <marker date="1429396020079" expanded="true" signature="9064:9096" placeholder="SELECT * FRO..accounts..." />
               </folding>
             </state>
           </provider>
@@ -66,11 +56,11 @@
       <file leaf-file-name="Utilities.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Utilities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="1190">
-              <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="656" max-vertical-offset="1190">
+              <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1429388026814" expanded="true" signature="313:336" placeholder="SELECT ID fr..accounts..." />
+                <marker date="1429394818162" expanded="true" signature="313:336" placeholder="SELECT ID fr..accounts..." />
               </folding>
             </state>
           </provider>
@@ -79,9 +69,18 @@
       <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="663">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="816">
+              <caret line="37" column="119" selection-start-line="37" selection-start-column="119" selection-end-line="37" selection-end-column="119" />
+              <folding>
+                <element signature="e#467#468#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#590#591#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#654#655#0" expanded="true" />
+                <element signature="e#681#682#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,8 +88,8 @@
       <file leaf-file-name="TotalAccounts.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/TotalAccounts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="816">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="134" max-vertical-offset="867">
+              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -144,6 +143,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -179,7 +179,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -509,11 +508,12 @@
       <workItem from="1428654692091" duration="12793000" />
       <workItem from="1428688254943" duration="16775000" />
       <workItem from="1429379183761" duration="6724000" />
+      <workItem from="1429392348916" duration="3728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40972000" />
+    <option name="totallyTimeSpent" value="44700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -577,6 +577,67 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Source/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1547">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#startUI#0;class#Main#0" expanded="false" />
+            <element signature="method#createTotalAccounts#0;class#Main#0" expanded="false" />
+            <element signature="method#managementUI#0;class#Main#0" expanded="false" />
+            <element signature="method#userUI#0;class#Main#0" expanded="false" />
+            <element signature="method#createAccount#0;class#Main#0" expanded="false" />
+            <element signature="method#successfulLogin#0;class#Main#0" expanded="false" />
+            <marker date="1429396020079" expanded="true" signature="1974:1996" placeholder="SELECT * FRO..accounts..." />
+            <marker date="1429396020079" expanded="true" signature="3493:3591" placeholder="INSERT INTO ..." />
+            <marker date="1429396020079" expanded="true" signature="4362:4399" placeholder="DELETE FROM ..." />
+            <marker date="1429396020079" expanded="true" signature="4500:4557" placeholder="DELETE FROM ..." />
+            <marker date="1429396020079" expanded="true" signature="4605:4623" placeholder="DELETE FROM ..." />
+            <marker date="1429396020079" expanded="true" signature="6076:6131" placeholder="SELECT Passw..logindetails..." />
+            <marker date="1429396020079" expanded="true" signature="7336:7412" placeholder="SELECT ID fr..accounts..." />
+            <marker date="1429396020079" expanded="true" signature="8280:8356" placeholder="INSERT INTO ..." />
+            <marker date="1429396020079" expanded="true" signature="9064:9096" placeholder="SELECT * FRO..accounts..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Utilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="1190">
+          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1429394818162" expanded="true" signature="313:336" placeholder="SELECT ID fr..accounts..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="663">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/TotalAccounts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="816">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
@@ -587,25 +648,15 @@
             <element signature="method#userUI#0;class#Main#0" expanded="false" />
             <element signature="method#createAccount#0;class#Main#0" expanded="false" />
             <element signature="method#successfulLogin#0;class#Main#0" expanded="false" />
-            <marker date="1429389471862" expanded="true" signature="1492:1514" placeholder="Select * fro..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="2081:2104" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="2436:2498" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="3573:3595" placeholder="SELECT * FRO..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5110" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5125" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5138" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5150" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5165" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5177" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="6607:6662" placeholder="SELECT Passw..logindetails..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7901" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7922" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7929" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7943" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7945" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7946" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="8811:8887" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="9595:9627" placeholder="SELECT * FRO..accounts..." />
+            <marker date="1429396020079" expanded="true" signature="1974:1996" placeholder="SELECT * FRO..accounts..." />
+            <marker date="1429396020079" expanded="true" signature="3493:3591" placeholder="INSERT INTO ..." />
+            <marker date="1429396020079" expanded="true" signature="4362:4399" placeholder="DELETE FROM ..." />
+            <marker date="1429396020079" expanded="true" signature="4500:4557" placeholder="DELETE FROM ..." />
+            <marker date="1429396020079" expanded="true" signature="4605:4623" placeholder="DELETE FROM ..." />
+            <marker date="1429396020079" expanded="true" signature="6076:6131" placeholder="SELECT Passw..logindetails..." />
+            <marker date="1429396020079" expanded="true" signature="7336:7412" placeholder="SELECT ID fr..accounts..." />
+            <marker date="1429396020079" expanded="true" signature="8280:8356" placeholder="INSERT INTO ..." />
+            <marker date="1429396020079" expanded="true" signature="9064:9096" placeholder="SELECT * FRO..accounts..." />
           </folding>
         </state>
       </provider>
@@ -614,7 +665,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="663">
           <caret line="37" column="117" selection-start-line="37" selection-start-column="117" selection-end-line="37" selection-end-column="117" />
-          <folding />
+          <folding>
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -638,25 +698,15 @@
             <element signature="method#userUI#0;class#Main#0" expanded="false" />
             <element signature="method#createAccount#0;class#Main#0" expanded="false" />
             <element signature="method#successfulLogin#0;class#Main#0" expanded="false" />
-            <marker date="1429389471862" expanded="true" signature="1492:1514" placeholder="Select * fro..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="2081:2104" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="2436:2498" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="3573:3595" placeholder="SELECT * FRO..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5110" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5125" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5138" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5150" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5165" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5177" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="6607:6662" placeholder="SELECT Passw..logindetails..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7901" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7922" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7929" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7943" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7945" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7946" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="8811:8887" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="9595:9627" placeholder="SELECT * FRO..accounts..." />
+            <marker date="1429396020079" expanded="true" signature="1974:1996" placeholder="SELECT * FRO..accounts..." />
+            <marker date="1429396020079" expanded="true" signature="3493:3591" placeholder="INSERT INTO ..." />
+            <marker date="1429396020079" expanded="true" signature="4362:4399" placeholder="DELETE FROM ..." />
+            <marker date="1429396020079" expanded="true" signature="4500:4557" placeholder="DELETE FROM ..." />
+            <marker date="1429396020079" expanded="true" signature="4605:4623" placeholder="DELETE FROM ..." />
+            <marker date="1429396020079" expanded="true" signature="6076:6131" placeholder="SELECT Passw..logindetails..." />
+            <marker date="1429396020079" expanded="true" signature="7336:7412" placeholder="SELECT ID fr..accounts..." />
+            <marker date="1429396020079" expanded="true" signature="8280:8356" placeholder="INSERT INTO ..." />
+            <marker date="1429396020079" expanded="true" signature="9064:9096" placeholder="SELECT * FRO..accounts..." />
           </folding>
         </state>
       </provider>
@@ -673,25 +723,15 @@
             <element signature="method#userUI#0;class#Main#0" expanded="false" />
             <element signature="method#createAccount#0;class#Main#0" expanded="false" />
             <element signature="method#successfulLogin#0;class#Main#0" expanded="false" />
-            <marker date="1429389471862" expanded="true" signature="1492:1514" placeholder="Select * fro..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="2081:2104" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="2436:2498" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="3573:3595" placeholder="SELECT * FRO..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5110" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5125" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5138" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5150" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5165" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5177" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="6607:6662" placeholder="SELECT Passw..logindetails..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7901" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7922" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7929" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7943" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7945" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7946" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="8811:8887" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="9595:9627" placeholder="SELECT * FRO..accounts..." />
+            <marker date="1429396020079" expanded="true" signature="1974:1996" placeholder="SELECT * FRO..accounts..." />
+            <marker date="1429396020079" expanded="true" signature="3493:3591" placeholder="INSERT INTO ..." />
+            <marker date="1429396020079" expanded="true" signature="4362:4399" placeholder="DELETE FROM ..." />
+            <marker date="1429396020079" expanded="true" signature="4500:4557" placeholder="DELETE FROM ..." />
+            <marker date="1429396020079" expanded="true" signature="4605:4623" placeholder="DELETE FROM ..." />
+            <marker date="1429396020079" expanded="true" signature="6076:6131" placeholder="SELECT Passw..logindetails..." />
+            <marker date="1429396020079" expanded="true" signature="7336:7412" placeholder="SELECT ID fr..accounts..." />
+            <marker date="1429396020079" expanded="true" signature="8280:8356" placeholder="INSERT INTO ..." />
+            <marker date="1429396020079" expanded="true" signature="9064:9096" placeholder="SELECT * FRO..accounts..." />
           </folding>
         </state>
       </provider>
@@ -725,18 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="663">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/TotalAccounts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="816">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="134" max-vertical-offset="867">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -744,18 +776,35 @@
     <entry file="file://$PROJECT_DIR$/Source/Utilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="656" max-vertical-offset="1190">
-          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1429388026814" expanded="true" signature="313:336" placeholder="SELECT ID fr..accounts..." />
+            <marker date="1429394818162" expanded="true" signature="313:336" placeholder="SELECT ID fr..accounts..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="816">
+          <caret line="37" column="119" selection-start-line="37" selection-start-column="119" selection-end-line="37" selection-end-column="119" />
+          <folding>
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47577092" vertical-offset="73" max-vertical-offset="1547">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state vertical-scroll-proportion="1.5726873" vertical-offset="0" max-vertical-offset="850">
+          <caret line="239" column="0" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#startUI#0;class#Main#0" expanded="false" />
@@ -764,25 +813,15 @@
             <element signature="method#userUI#0;class#Main#0" expanded="false" />
             <element signature="method#createAccount#0;class#Main#0" expanded="false" />
             <element signature="method#successfulLogin#0;class#Main#0" expanded="false" />
-            <marker date="1429389471862" expanded="true" signature="1492:1514" placeholder="Select * fro..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="2081:2104" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="2436:2498" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="3573:3595" placeholder="SELECT * FRO..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5110" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5125" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5138" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5150" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5165" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="5082:5177" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="6607:6662" placeholder="SELECT Passw..logindetails..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7901" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7922" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7929" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7943" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7945" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="7867:7946" placeholder="SELECT ID fr..accounts..." />
-            <marker date="1429389471862" expanded="true" signature="8811:8887" placeholder="INSERT INTO ..." />
-            <marker date="1429389471862" expanded="true" signature="9595:9627" placeholder="SELECT * FRO..accounts..." />
+            <marker date="1429396020079" expanded="true" signature="1974:1996" placeholder="SELECT * FRO..accounts..." />
+            <marker date="1429396020079" expanded="true" signature="3493:3591" placeholder="INSERT INTO ..." />
+            <marker date="1429396020079" expanded="true" signature="4362:4399" placeholder="DELETE FROM ..." />
+            <marker date="1429396020079" expanded="true" signature="4500:4557" placeholder="DELETE FROM ..." />
+            <marker date="1429396020079" expanded="true" signature="4605:4623" placeholder="DELETE FROM ..." />
+            <marker date="1429396020079" expanded="true" signature="6076:6131" placeholder="SELECT Passw..logindetails..." />
+            <marker date="1429396020079" expanded="true" signature="7336:7412" placeholder="SELECT ID fr..accounts..." />
+            <marker date="1429396020079" expanded="true" signature="8280:8356" placeholder="INSERT INTO ..." />
+            <marker date="1429396020079" expanded="true" signature="9064:9096" placeholder="SELECT * FRO..accounts..." />
           </folding>
         </state>
       </provider>
