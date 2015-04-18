@@ -126,7 +126,7 @@ public class Main {
 
 
         }
-        if (manageChoice == 3){
+        else if (manageChoice == 3){
             System.out.println(allTheAccounts);
             managementUI(stmt,allTheAccounts);
         }
@@ -240,7 +240,7 @@ public class Main {
             int ID = Integer.parseInt(rs.getString(1));
             String name = rs.getString(2);
             double bal = Double.parseDouble(rs.getString(3));
-            String bnk = rs.getString(4);
+            int bnk = Integer.parseInt(rs.getString(4));
             int pin = Integer.parseInt(rs.getString(5));
             currentUser = new Account(ID,name,bal,bnk,pin);
         }
